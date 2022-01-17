@@ -1,0 +1,25 @@
+package labtest2;
+import java.util.Scanner;
+public class no1 {
+public static void main (String [] args) {
+	Scanner sc=new Scanner (System.in);
+	double percentage;
+	System.out.println("Number of classes held: ");
+	int held= sc.nextInt();
+	
+	System.out.println("The number classes attended: ");
+	int attend=sc.nextInt();
+	
+	 percentage= (attend/held)*100;
+	
+	System.out.println("Percentage of classs attended: "+ percentage);
+	
+	if(percentage<75) {
+		System.out.println("You are not allowed to sit in exam");
+	}
+	else {
+		System.out.println("You are allowed to sit in exam");
+	}
+	
+}
+}
